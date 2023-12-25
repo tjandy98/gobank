@@ -2,7 +2,7 @@ package main
 
 import "log"
 
-func main(){
+func main() {
 
 	store, err := NewPostgresStore()
 
@@ -10,7 +10,7 @@ func main(){
 		log.Fatal(err)
 	}
 
-	if err := store.Init(); err!= nil {
+	if err := store.Init(); err != nil {
 		log.Fatal(err)
 	}
 	server := NewAPIServer(":3000", store)
