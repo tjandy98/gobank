@@ -4,6 +4,12 @@ A development project to learn and understand API development in Go without rely
 
 ## Development
 
+Set environment variable
+
+```
+export JWT_SECRET=gobanksecret
+```
+
 Run Postgres using Docker
 
 ```
